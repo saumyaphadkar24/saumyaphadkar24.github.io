@@ -22,7 +22,7 @@ export default function Header() {
 
       {/* ─── Row 1: name on left, icons on right ───────────────────── */}
       <div className="flex justify-between items-center">
-        <div className="font-extrabold text-[50px] text-[#343F56]">
+        <div className="font-extrabold text-[20px] text-[#343F56]">
           Saumya Parag Phadkar
         </div>
         <div className="flex items-center space-x-[16px]">
