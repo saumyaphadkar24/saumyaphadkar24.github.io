@@ -6,6 +6,7 @@ export default defineConfig({
   base: './',            // use relative paths for all assets
   build: {
     outDir: 'docs',      // emit into docs/ instead of dist/
+    emptyOutDir: true,
   },
   plugins: [
     react(),
