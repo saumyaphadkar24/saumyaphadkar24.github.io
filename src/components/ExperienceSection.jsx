@@ -3,14 +3,30 @@ import React from 'react'
 
 const experiences = [
   {
-    title: 'Research Analyst',
-    company: 'Office of the Provost, New York University',
-    location: 'New York, NY',
-    dates: 'Oct 2024 – Present',
+    title: 'Machine Learning Engineer',
+    company: 'Sanio AI',
+    description: 'Empowering enterprises to unlock siloed data and build differentiated AI faster through real-time labeling, intelligent data orchestration, and scalable data pipelines.',
+    location: 'New York City Metropolitan Area',
+    dates: 'Sept 2025 – Present',
     bullets: [
-      'Conducted comprehensive market research across 50 R1 universities (web-scraping), analyzing PhD alumni dashboard functionalities to develop a strategic metric system that identifies and maps customer needs effectively.',
-      'Designed and deployed a centralized, interactive Tableau dashboard on Tableau Cloud, integrating over 20,000 data points, which enhanced stakeholder engagement and institutional transparency.',
-      'Leveraged AI-powered tools like NYU’s Gemini API and HPC cluster to clean and classify unstructured data, automating backend processes and improving reporting accuracy via prompt engineering for feature generation and text classification.',
+      'Built a Dynamic Attribute Extraction Pipeline for 3M+ SKUs, leveraging LLM-powered raw attribute extraction with OpenAI/Ollama and advanced prompt engineering.',
+      'Designed an embedding-driven normalization system using cosine similarity clustering, low-threshold recall, and LLM semantic validation to unify attribute variants.',
+      'Architected a schema-free EAV framework with coverage-scored attribute ranking, enabling adaptive catalog analytics and effortless schema evolution across diverse product domains.',
+      'Deployed as modular, production-grade microservices with FastAPI + Temporal DAG workflows, Dockerized orchestration, and CLI/API interfaces for scalable, low-latency category-wide processing.',
+    ],
+  },
+  {
+    title: 'Senior Engineer and Research Analyst',
+    company: 'New York University',
+    description: 'Office of Academic Program Review and Assessment (OAPRA) ensures academic program quality and regulatory compliance by reviewing and approving new programs in alignment with Middle States accreditation.',
+    location: 'New York, NY',
+    dates: 'Oct 2024 – Sept 2025',
+    bullets: [
+      'Enhanced the dashboard with longitudinal career-path analytics, enabling visualization of alumni movement across sectors and time for trend and retention analysis.',
+      'Applied advanced Tableau capabilities (LOD expressions, parameter-driven filtering, calculated fields, custom hierarchies) to build complex, interactive visualizations tailored to institutional decision-making.',
+      'Integrated Generative AI accessibility frameworks, using prompt engineering and LLM-based data classification to support scalable feature generation and ensure the dashboard met inclusive, accessible design standards.',
+      'Conducted comprehensive market research across 50 R1 universities (web scraping) to analyze PhD alumni dashboard functionalities and develop a strategic metric system aligning with stakeholder needs.',
+      'Designed and deployed a centralized, interactive Tableau dashboard, integrating 20K+ alumni records across academia, corporate, nonprofit, and government sectors to improve data-driven decision-making and transparency.',
     ],
   },
   {
@@ -63,6 +79,9 @@ export default function ExperienceSection() {
           >
             <h3 className="text-[18px] font-bold mb-1">{exp.title}</h3>
             <p className="text-[14px] font-semibold mb-1">{exp.company}</p>
+            {exp.description && (
+              <p className="text-[12px] italic opacity-70 mb-2 leading-relaxed">{exp.description}</p>
+            )}
             <p className="text-[14px] opacity-80 mb-1">{exp.location}</p>
             <p className="text-[14px] opacity-80 mb-3">{exp.dates}</p>
             <ul className="list-disc pl-5 space-y-2 text-[14px] flex-1 overflow-auto">

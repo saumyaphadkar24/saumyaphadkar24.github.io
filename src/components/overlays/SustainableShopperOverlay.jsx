@@ -33,12 +33,16 @@ export default function SustainableShopperOverlay({ onClose }) {
             <li>
               Engineered a modular <strong>Flask</strong> backend with secure <strong>JWT</strong> auth,
               MongoDB integration, and async polling to Fashn.ai for virtual try-on predictions;
-              achieved <strong>98% uptime</strong> across 200+ real-time image inference sessions.
+              integrated CI/CD pipelines with Docker and Jenkins, achieving <strong>98% uptime</strong> across 200+ real-time image inference sessions.
             </li>
             <li>
-              Deployed GPT-4–based garment description & outfit recommendation system using multimodal prompt
-              pipelines and <strong>CLIP-based visual similarity search</strong>, boosting user engagement
-              with 3× higher interaction rates during testing.
+              Developed interactive dashboards and user flows in <strong>React</strong>; integrated backend with .NET Core web APIs
+              for extended e-commerce functionality and seamless system interoperability.
+            </li>
+            <li>
+              Deployed GPT-4-based garment description and outfit recommendation system using multimodal prompt
+              pipelines and <strong>CLIP-based visual similarity search</strong>; validated through user study (n=11), achieving <strong>2x faster
+              task completion and 91% user preference</strong>, driving final product design.
             </li>
           </ul>
 

@@ -26,6 +26,28 @@ export default function Header() {
           Saumya Parag Phadkar
         </div>
         <div className="flex items-center space-x-[16px]">
+          <a
+            href="/Resume.pdf"
+            download
+            className="
+              px-4 py-2
+              bg-[#C6F7E2]
+              border-2 border-[#343F56]
+              rounded-full
+              text-[#343F56]
+              text-[14px]
+              font-bold
+              shadow-md
+              transform
+              transition-all
+              duration-200
+              ease-out
+              hover:scale-105
+              hover:bg-[#A259F7]
+            "
+          >
+            Download Resume
+          </a>
           <a href="https://linkedin.com/in/saumya-phadkar" target="_blank" rel="noopener">
             <img src={linkedinIcon} alt="LinkedIn" className="w-6 h-5" />
           </a>

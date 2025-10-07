@@ -25,3 +25,10 @@ pnpm-debug.log*
 # Optional: macOS
 .AppleDouble
 .LSOverride
+
+# Resume files
+Resume.pdf
+resume.tex
+
+# Claude files
+CLAUDE.md

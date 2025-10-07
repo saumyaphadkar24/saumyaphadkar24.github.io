@@ -9,7 +9,7 @@ const education = [
     dates: "Sept 2023 – May 2025",
   },
   {
-    school: "Pune University",
+    school: "University of Pune (Savitribai Phule Pune University)",
     degree: "BE in Computer Engineering, Hons in AI/ML",
     location: "Pune, India",
     dates: "Aug 2019 – Jun 2023",

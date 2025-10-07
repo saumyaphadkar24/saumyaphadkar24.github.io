@@ -6,6 +6,7 @@ import SkillsSection from './components/SkillsSection';
 import ProjectsSection from './components/ProjectsSection';
 import EducationSection from './components/EducationSection';
 import ExperienceSection from './components/ExperienceSection';
+import CertificationsSection from './components/CertificationsSection';
 
 
 function App() {
@@ -23,6 +24,8 @@ function App() {
       <EducationSection />
       <Divider />
       <ExperienceSection />
+      <Divider />
+      <CertificationsSection />
       <Divider />
     </div>
   );

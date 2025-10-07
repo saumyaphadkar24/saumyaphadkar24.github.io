@@ -31,16 +31,20 @@ export default function WagSyncAIOverlay({ onClose }) {
           <div className="p-6 flex-1 space-y-4 text-[#343F56]">
             <ul className="list-disc pl-5 space-y-2">
               <li>
-                Conducted <strong>user-centered design research</strong> across 10+ participants,
-                deriving high-priority features from surveys, interviews, and competitor analysis;
-                mapped needs to develop AI-powered modules for health tracking,
+                Conducted <strong>user-centered design research with 10+ participants</strong>,
+                extracted high-priority features from pre-surveys, interviews, and competitor analysis
+                to drive AI-powered modules for health tracking,
                 emergency support, training, and social routines.
               </li>
               <li>
                 Built mid-fidelity wireframes in <strong>Figma</strong> and a functional
                 <strong> Voiceflow</strong> chatbot with intent recognition and fallback strategies;
-                prototyped magnetic tracker and VR training in <strong>Wonda VR</strong> to boost
-                habit formation and engagement.
+                shipped interactive AI product prototype, validated in peer-based user testing, enabling robust
+                conversational flows for dog care.
+              </li>
+              <li>
+                Prototyped a tangible magnetic meal tracker using a 3D-printed interface and developed a VR training
+                simulation in <strong>Wonda VR</strong>; incorporated user feedback to support caregiver engagement and habit formation.
               </li>
             </ul>
           </div>
