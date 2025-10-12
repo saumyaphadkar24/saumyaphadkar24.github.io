@@ -30,10 +30,10 @@ export default function FunFactsModal({ open, onClose }) {
         className={`
           relative
           w-[70%] max-w-3xl
-          bg-white
-          border-4 border-[#FFFACD]
+          bg-white/95 backdrop-blur-sm
+          border border-purple-300
           rounded-2xl
-          shadow-[0_8px_20px_rgba(165,89,247,0.3)]
+          shadow-xl
           p-8
 
           /* Animation */
@@ -42,30 +42,30 @@ export default function FunFactsModal({ open, onClose }) {
         `}
         onClick={(e) => e.stopPropagation()}  // prevent backdrop click from firing when clicking inside
       >
-        {/* Close “×” */}
+        {/* Close "×" */}
         <button
           onClick={handleClose}
-          className="absolute top-4 right-4 text-2xl text-[#343F56] hover:text-[#A259F7]"
+          className="absolute top-4 right-4 text-3xl text-gray-500 hover:text-purple-600 transition-colors"
           aria-label="Close fun facts"
         >
           ×
         </button>
 
-        {/* Header pill */}
-        <div className="flex justify-center mb-6">
-          <div className="px-6 py-2 bg-[#C6F7E2] border border-[#343F56] rounded-full">
-            <span className="text-[20px] font-bold text-[#343F56]">
-              Fun Facts
-            </span>
-          </div>
+        {/* Header */}
+        <div className="mb-6">
+          <h3 className="text-[28px] font-bold text-purple-700 text-center">
+            Fun Facts
+          </h3>
         </div>
 
         {/* Fact list */}
-        <ul className="list-disc list-inside space-y-2 text-[#343F56] text-[16px]">
-          <li>Dog lover & accidental canine behavior analyst</li>
-          <li>Ex-basketball captain who now mostly shoots hoops with data</li>
-          <li>“Can we automate that?” is basically my catchphrase</li>
-          <li>Runs on coffee and bubble tea for statistically significant periods</li>
+        <ul className="list-disc list-inside space-y-3 text-[#343F56] text-[16px] leading-relaxed">
+          <li>Dog lover & accidental canine behavior analyst (built WagSyncAI to prove it)</li>
+          <li>Ex-basketball captain who now shoots hoops with data pipelines instead of basketballs</li>
+          <li>"Can we automate that?" is basically my life motto</li>
+          <li>Once fine-tuned LLMs to translate 4,000+ Bollywood film scripts (yes, really)</li>
+          <li>Built a virtual try-on app because I believe shopping should be sustainable AND fun</li>
+          <li>My idea of a good time: debugging code at 2am with lo-fi beats playing</li>
         </ul>
       </div>
     </div>

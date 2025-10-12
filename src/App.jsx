@@ -11,21 +11,21 @@ import CertificationsSection from './components/CertificationsSection';
 
 function App() {
   return (
-    <div className="w-full min-h-screen bg-gradient-to-br from-green-100 via-blue-100 to-purple-200 font-sans">
+    <div className="w-full min-h-screen bg-gradient-to-br from-green-50 via-blue-50 to-purple-100 font-sans">
       <Header />
       <HeroSection />
       <Divider />
       <AboutSection />
       <Divider />
-      <SkillsSection />
+      <ExperienceSection />
       <Divider />
       <ProjectsSection />
       <Divider />
       <EducationSection />
       <Divider />
-      <ExperienceSection />
-      <Divider />
       <CertificationsSection />
+      <Divider />
+      <SkillsSection />
       <Divider />
     </div>
   );

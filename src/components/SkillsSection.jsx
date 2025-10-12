@@ -91,8 +91,8 @@ export default function SkillsSection() {
             style={{ top: popupTop }}
             className="
               absolute left-0 right-0 z-20 mb-8
-              bg-white/90 border-[3px] border-[#FAF9F8]
-              rounded-[16px] shadow-lg
+              bg-white/95 border border-gray-200/60
+              rounded-2xl shadow-xl
               h-[120px] overflow-x-auto whitespace-nowrap
               flex items-center space-x-6 px-6
             "
@@ -133,13 +133,14 @@ export default function SkillsSection() {
               }}
               className="
                 flex items-center justify-center
-                bg-white/30 backdrop-blur-sm
-                border-[3px] border-[#FAF9F8]
-                rounded-[16px]
-                shadow-lg p-6
+                bg-white/70 backdrop-blur-sm
+                border border-gray-200/60
+                rounded-2xl
+                shadow-md p-6
                 text-center text-[18px] font-bold text-[#343F56]
-                transform transition-all duration-300 ease-out
-                hover:scale-105 hover:shadow-2xl
+                transition-all duration-300 ease-out
+                hover:shadow-xl
+                hover:border-purple-300
               "
               style={{ minHeight: '120px' }}
             >

@@ -15,9 +15,9 @@ export default function Header() {
     <header className="
       sticky top-0 z-50 w-full h-[120px]
       flex flex-col justify-between      /* stack two rows, center vertically */
-      bg-white/30 backdrop-blur-sm
-      border-[3px] border-[#FAF9F8]
-      rounded-b-[16px] px-[32px] py-4
+      bg-white/60 backdrop-blur-md
+      border-b-2 border-gray-200/50
+      shadow-sm px-[32px] py-4
     ">
 
       {/* ─── Row 1: name on left, icons on right ───────────────────── */}
@@ -31,19 +31,18 @@ export default function Header() {
             download
             className="
               px-4 py-2
-              bg-[#C6F7E2]
-              border-2 border-[#343F56]
+              bg-gradient-to-r from-purple-300 to-blue-300
+              border-2 border-transparent
               rounded-full
-              text-[#343F56]
+              text-white
               text-[14px]
               font-bold
               shadow-md
-              transform
               transition-all
               duration-200
               ease-out
-              hover:scale-105
-              hover:bg-[#A259F7]
+              hover:shadow-lg
+              hover:from-purple-400 hover:to-blue-400
             "
           >
             Download Resume

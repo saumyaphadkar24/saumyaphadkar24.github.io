@@ -17,98 +17,80 @@ export default function AboutSection() {
         {/* Who I Am card */}
             <div className="
             flex-1
-            bg-white/30 backdrop-blur-sm
-            border-[3px] border-[#FAF9F8]
-            rounded-[16px]
-            shadow-lg
+            bg-white/70 backdrop-blur-sm
+            border border-gray-200/60
+            rounded-2xl
+            shadow-md
             p-8
             text-[#343F56]
             space-y-4
-            transform              /* enable transforms */
-            transition-transform   /* animate transforms */
-            duration-300           /* 300ms timing */
-            ease-out               /* easing */
-            hover:scale-105        /* scale up to 105% on hover */
-            hover:shadow-2xl       /* deepen the shadow a bit */
+            transition-all
+            duration-300
+            ease-out
+            hover:shadow-xl
+            hover:border-purple-300
         ">
-          <h3 className="text-[24px] font-semibold text-[#A259F7] text-center">
+          <h3 className="text-[24px] font-semibold text-purple-700 text-center">
             Who I Am
           </h3>
           <div className="space-y-4 text-[16px] leading-relaxed">
             <p>
-              Some people collect stamps—I collect algorithms, playlists, and a running list of product ideas that only seems to grow.
+              Full-Stack AI/ML Engineer with experience building and deploying production-grade AI systems across cloud platforms (AWS, SageMaker), ML infrastructure (Docker, LangChain, Temporal), and modern frontends (React, Angular, Vue3).
             </p>
             <p>
-              Currently based in New York (by way of Pune, India), I build AI systems and web apps that don’t just work, they make life smoother, smarter, and maybe even a bit more fun.
+              Currently based in New York (by way of Pune, India), I specialize in LLM orchestration, RAG pipelines, and Explainable AI—with successful deployments in academic, startup, and nonprofit environments.
             </p>
             <p>
-              I thrive where code meets creativity: I’ve led AI projects for everything from virtual dog parenting to urban health planning (because who doesn’t want their sidekick or city to be healthier and smarter?).
+              I thrive where code meets creativity: I've architected a 3M+ SKU attribute extraction pipeline, built PhD alumni dashboards processing 20K+ records, and developed virtual try-on systems that achieved 91% user preference in studies.
             </p>
             <p>
-              Whether it’s wrangling large language models, making sense of thousands of Bollywood scripts, or building dashboards that impress even the most jaded stakeholders, I believe technology should be just as fun and human as it is powerful and practical.
+              Whether it's wrangling large language models, engineering hybrid normalization frameworks combining semantic embeddings with fuzzy matching, or building interactive dashboards that impress stakeholders, I believe technology should be as intelligent as it is accessible.
             </p>
             <p>
-              If you want to talk code, design, or why data dashboards are the unsung heroes of modern institutions, my inbox is always open.
+              Some people collect stamps—I collect algorithms, side projects, and a running list of product ideas. From translating 4,000+ Bollywood scripts to optimizing urban health facility placement, I'm always looking for the next interesting problem to solve.
             </p>
           </div>
         </div>
 
-        {/* What I’m Good At card */}
+        {/* What I'm Good At card */}
         <div className="
             flex-1
-            bg-white/30 backdrop-blur-sm
-            border-[3px] border-[#FAF9F8]
-            rounded-[16px]
-            shadow-lg
+            bg-white/70 backdrop-blur-sm
+            border border-gray-200/60
+            rounded-2xl
+            shadow-md
             p-8
             text-[#343F56]
             space-y-4
-            transform              /* enable transforms */
-            transition-transform   /* animate transforms */
-            duration-300           /* 300ms timing */
-            ease-out               /* easing */
-            hover:scale-105        /* scale up to 105% on hover */
-            hover:shadow-2xl       /* deepen the shadow a bit */
+            transition-all
+            duration-300
+            ease-out
+            hover:shadow-xl
+            hover:border-purple-300
           ">
-          <h3 className="text-[24px] font-semibold text-[#A259F7] text-center">
-            What I’m Good At
+          <h3 className="text-[24px] font-semibold text-purple-700 text-center">
+            What I'm Good At
           </h3>
-          <ul className="list-disc list-inside space-y-2 text-[16px] leading-relaxed">
+          <ul className="list-disc list-inside space-y-3 text-[16px] leading-relaxed">
             <li>
               <span className="font-semibold">AI/ML Engineering:</span>{' '}
-              <span className="font-medium text-gray-500">
-                Deep learning, NLP, LLMs (e.g., GPT, BERT), GenAI applications
-              </span>
+              Production LLM pipelines with multi-model orchestration. Expert in RAG, prompt engineering, fine-tuning (LoRA), and meta-learning.
+            </li>
+            <li>
+              <span className="font-semibold">Scalable Infrastructure:</span>{' '}
+              FastAPI microservices with Temporal workflows, Docker orchestration. Reduced memory usage by 90%. AWS certified (SageMaker, Lambda, EC2).
             </li>
             <li>
               <span className="font-semibold">Full-Stack Development:</span>{' '}
-              <span className="font-medium text-gray-500">
-                React, Flask, MongoDB, REST APIs
-              </span>
+              React, Angular, Vue3, Redux frontends. Flask, Django, .NET Core backends. Production apps with 98% uptime.
             </li>
             <li>
-              <span className="font-semibold">Data Visualization:</span>{' '}
-              <span className="font-medium text-gray-500">
-                Tableau, Power BI, custom dashboards
-              </span>
+              <span className="font-semibold">Data Engineering & Viz:</span>{' '}
+              Advanced Tableau, D3.js. Spark, Hadoop, Neo4j, GraphDB. Built dashboards on AWS EC2 integrated with Java APIs.
             </li>
             <li>
-              <span className="font-semibold">Cloud & DevOps:</span>{' '}
-              <span className="font-medium text-gray-500">
-                AWS (S3, Lambda, EC2), CI/CD pipelines
-              </span>
-            </li>
-            <li>
-              <span className="font-semibold">UI/UX & Product Design:</span>{' '}
-              <span className="font-medium text-gray-500">
-                Figma, prototyping, user interviews, wireframes
-              </span>
-            </li>
-            <li>
-              <span className="font-semibold">Collaboration:</span>{' '}
-              <span className="font-medium text-gray-500">
-                Agile teams, cross-functional projects, mentoring
-              </span>
+              <span className="font-semibold">Product & Research:</span>{' '}
+              User-centered design with Figma prototyping and user studies. Advanced research projects in meta-learning (MAML), geospatial optimization with TIGER/Line shapefiles, and few-shot learning with Siamese networks. Conducted 50+ parameterized simulations for data-driven decision making.
             </li>
           </ul>
         </div>
@@ -120,21 +102,19 @@ export default function AboutSection() {
           onClick={() => setOpen(true)}
           className="
             px-8 py-3
-            bg-[#C6F7E2]
-            border border-[#343F56]
+            bg-gradient-to-r from-purple-300 to-blue-300
+            border-2 border-transparent
             rounded-full
-            text-[#343F56]      /* dark text */
-            text-[20px]
-            font-bold           /* bold pixel font */
-            tracking-wide 
+            text-white
+            text-[18px]
+            font-semibold
+            tracking-wide
             shadow-md
-            transform
             transition-all
-            duration-200 
+            duration-200
             ease-out
-            hover:scale-105
-            hover:bg-[#A259F7] hover:text-black
-            hover:scale-105
+            hover:from-purple-400 hover:to-blue-400
+            hover:shadow-lg
           "
         >
           Fun Facts

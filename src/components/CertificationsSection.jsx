@@ -11,53 +11,53 @@ const certifications = [
 
 export default function CertificationsSection() {
   return (
-    <section id="certifications" className="py-12 px-8 max-w-[1440px] mx-auto">
-      <h2 className="text-[40px] font-extrabold text-[#343F56] text-center mb-8">
-        Certifications
-      </h2>
+    <section id="certifications" className="py-16 bg-transparent text-[#343F56]">
+    <h2 className="text-3xl font-extrabold text-center mb-10">Certifications</h2>
 
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 max-w-[800px]">
-          {certifications.map((cert) => (
-            <div
-              key={cert.title}
-              className="
-                bg-white/30 backdrop-blur-sm
-                border-[3px] border-[#FAF9F8]
-                rounded-[16px]
-                shadow-lg
-                p-6
-                text-[#343F56]
-                transform transition-all duration-300 ease-out
-                hover:scale-105 hover:shadow-2xl
-                flex flex-col
-              "
-              style={{ minHeight: '200px' }}
-            >
-              <h3 className="text-[18px] font-bold mb-2">{cert.title}</h3>
-              <p className="text-[14px] font-semibold mb-4 text-[#A259F7]">{cert.issuer}</p>
-              <div className="flex flex-wrap gap-2">
-                {cert.topics.map((topic) => (
-                  <span
-                    key={topic}
-                    className="
-                      inline-block
-                      bg-[#C6F7E2]/50
-                      border-2 border-[#C6F7E2]
-                      rounded-full
-                      px-3 py-1
-                      text-[12px] font-medium
-                      text-[#343F56]
-                    "
-                  >
-                    {topic}
-                  </span>
-                ))}
-              </div>
+    <div className="flex justify-center">
+      <div className="flex flex-wrap justify-center gap-6 max-w-[700px]">
+        {certifications.map((cert) => (
+          <div
+            key={cert.title}
+            className="
+              bg-white/60 backdrop-blur-md
+              border border-purple-200/40
+              rounded-2xl
+              shadow-sm
+              p-6
+              w-[280px]
+              text-center
+              hover:shadow-lg
+              hover:scale-[1.02]
+              transition-all duration-300 ease-out
+            "
+          >
+            <h3 className="text-lg font-bold mb-1">{cert.title}</h3>
+            <p className="text-sm text-purple-700 mb-4 font-medium">{cert.issuer}</p>
+
+            <div className="flex flex-wrap justify-center gap-2">
+              {cert.topics.map((topic) => (
+                <span
+                  key={topic}
+                  className="
+                    bg-gradient-to-r from-purple-50 to-green-50
+                    border border-purple-100
+                    rounded-full
+                    px-3 py-1
+                    text-xs
+                    font-medium
+                    text-[#343F56]
+                  "
+                >
+                  {topic}
+                </span>
+              ))}
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
+  </section>
+
   )
 }

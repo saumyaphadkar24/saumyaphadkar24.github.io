@@ -12,24 +12,22 @@ const HeroSection = () => {
         <h1 className="text-[40px] font-extrabold text-[#343F56] text-center">
           Hi! I am Saumya <span role="img" aria-label="waving hand">👋</span>
         </h1>
-        <p className="text-[24px] font-semibold text-[#A259F7] text-center">
-          I build playful, modern AI and web experiences
+        <p className="text-[24px] font-semibold text-purple-700 text-center">
+          Full-Stack AI/ML Engineer
         </p>
-        <p className="text-[18px] font-medium text-[#343F56] max-w-xl text-center">
-          Full-Stack Engineer & AI/ML Developer <br></br> Making technology more delightful and human :)
+        <p className="text-[18px] font-medium text-gray-700 max-w-xl text-center">
+          Building intelligent systems and modern web experiences
         </p>
-        <div className="flex flex-wrap gap-4 pt-4 justify-center">
+        <div className="flex flex-wrap gap-4 pt-6 justify-center">
           <a
             href="#projects"
-            className="bg-[#FF6F61] hover:bg-[#e65a52] text-[#343F56] px-6 py-3 rounded-full font-semibold transition"
+            className="bg-gradient-to-r from-purple-300 to-blue-300 hover:from-purple-400 hover:to-blue-400 text-white px-8 py-3 rounded-full font-semibold shadow-md hover:shadow-lg transition-all"
           >
-            See my work
+            View Projects
           </a>
-        </div>
-        <div className="flex flex-wrap gap-4 pt-4 justify-center">
           <a
             href="mailto:saumya.phadkar@gmail.com"
-            className="bg-[#FFC6E0] hover:bg-[#e0a6c2] text-[#343F56] px-6 py-3 rounded-full font-semibold border border-[#343F56] transition"
+            className="bg-white hover:bg-purple-50 text-purple-600 px-8 py-3 rounded-full font-semibold border-2 border-purple-300 shadow-md hover:shadow-lg transition-all"
           >
             Contact Me
           </a>
@@ -37,7 +35,7 @@ const HeroSection = () => {
       </div>
 
       {/* Right column: image */}
-      <div className="border-4 border-[#A259F7] p-1 rounded-[32px]">
+      <div className="border-4 border-purple-500 p-1 rounded-3xl shadow-lg">
         <img
           src={Picture}
           alt="Saumya in graduation gown"

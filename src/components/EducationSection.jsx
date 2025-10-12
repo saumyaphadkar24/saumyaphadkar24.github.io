@@ -25,7 +25,7 @@ export default function EducationSection() {
 
       <div className="relative">
         {/* central vertical line */}
-        <div className="absolute inset-y-0 left-1/2 w-0.5 bg-[#D1C2F6]" />
+        <div className="absolute inset-y-0 left-1/2 w-1 bg-gradient-to-b from-blue-300 via-purple-300 to-purple-400" />
 
         <div className="space-y-16">
           {education.map((edu, idx) => {
@@ -40,7 +40,7 @@ export default function EducationSection() {
               >
                 {/* dot on timeline */}
                 <span
-                  className="absolute left-1/2 w-3 h-3 bg-[#D1C2F6] rounded-full -translate-x-1/2"
+                  className="absolute left-1/2 w-4 h-4 bg-gradient-to-br from-purple-400 to-purple-500 rounded-full -translate-x-1/2 border-4 border-white shadow-md"
                 />
 
                 {/* card */}
@@ -52,13 +52,13 @@ export default function EducationSection() {
                 >
                   <div
                     className="
-                      bg-white/30 backdrop-blur-sm
-                      border-[3px] border-[#FAF9F8]
-                      rounded-[16px]
-                      shadow-lg
+                      bg-white/70 backdrop-blur-sm
+                      border border-gray-200/60
+                      rounded-2xl
+                      shadow-md
                       p-6
-                      transform transition-all duration-300 ease-out
-                      hover:scale-105 hover:shadow-2xl
+                      transition-all duration-300 ease-out
+                      hover:shadow-xl hover:border-purple-300
                     "
                   >
                     <h3 className="text-[20px] font-semibold text-[#343F56]">

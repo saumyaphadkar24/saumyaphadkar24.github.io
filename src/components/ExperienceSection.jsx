@@ -12,7 +12,6 @@ const experiences = [
       'Built a Dynamic Attribute Extraction Pipeline for 3M+ SKUs, leveraging LLM-powered raw attribute extraction with OpenAI/Ollama and advanced prompt engineering.',
       'Designed an embedding-driven normalization system using cosine similarity clustering, low-threshold recall, and LLM semantic validation to unify attribute variants.',
       'Architected a schema-free EAV framework with coverage-scored attribute ranking, enabling adaptive catalog analytics and effortless schema evolution across diverse product domains.',
-      'Deployed as modular, production-grade microservices with FastAPI + Temporal DAG workflows, Dockerized orchestration, and CLI/API interfaces for scalable, low-latency category-wide processing.',
     ],
   },
   {
@@ -55,42 +54,67 @@ const experiences = [
 
 export default function ExperienceSection() {
   return (
-    <section id="experience" className="py-12 px-8 max-w-[1440px] mx-auto">
-      <h2 className="text-[40px] font-extrabold text-[#343F56] text-center mb-8">
+    <section id="experience" className="py-12 px-8 max-w-[1200px] mx-auto">
+      <h2 className="text-[40px] font-extrabold text-[#343F56] text-center mb-12">
         Experience
       </h2>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
-        {experiences.map((exp) => (
-          <div
-            key={exp.title}
-            className="
-              bg-white/30 backdrop-blur-sm
-              border-[3px] border-[#FAF9F8]
-              rounded-[16px]
-              shadow-lg
-              p-6
-              text-[#343F56]
-              transform transition-all duration-300 ease-out
-              hover:scale-105 hover:shadow-2xl
-              flex flex-col
-            "
-            style={{ minHeight: '280px' }}
-          >
-            <h3 className="text-[18px] font-bold mb-1">{exp.title}</h3>
-            <p className="text-[14px] font-semibold mb-1">{exp.company}</p>
-            {exp.description && (
-              <p className="text-[12px] italic opacity-70 mb-2 leading-relaxed">{exp.description}</p>
-            )}
-            <p className="text-[14px] opacity-80 mb-1">{exp.location}</p>
-            <p className="text-[14px] opacity-80 mb-3">{exp.dates}</p>
-            <ul className="list-disc pl-5 space-y-2 text-[14px] flex-1 overflow-auto">
-              {exp.bullets.map((b, i) => (
-                <li key={i}>{b}</li>
-              ))}
-            </ul>
-          </div>
-        ))}
+      <div className="relative">
+        {/* Timeline line - lighter gradient */}
+        <div className="absolute left-0 top-0 bottom-0 w-[3px] bg-gradient-to-b from-blue-300 via-purple-300 to-purple-400 hidden md:block"></div>
+
+        <div className="space-y-12">
+          {experiences.map((exp) => (
+            <div
+              key={exp.title + exp.company}
+              className="relative pl-0 md:pl-12 group"
+            >
+              {/* Timeline dot */}
+              <div className="absolute left-0 top-2 w-[3px] h-full bg-gradient-to-b from-blue-300 to-purple-300 md:hidden"></div>
+              <div className="absolute left-[-6px] top-2 w-4 h-4 rounded-full bg-gradient-to-br from-purple-400 to-purple-500 border-4 border-white shadow-lg hidden md:block group-hover:scale-125 transition-transform duration-300"></div>
+
+              <div className="bg-white/70 backdrop-blur-sm border border-gray-200/60 rounded-2xl shadow-md p-6 hover:shadow-xl transition-all duration-300 hover:border-purple-300">
+                {/* Header */}
+                <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4 gap-2">
+                  <div className="flex-1">
+                    <h3 className="text-[22px] font-bold text-[#343F56] mb-1">
+                      {exp.title}
+                    </h3>
+                    <p className="text-[18px] font-semibold text-purple-700 mb-2">
+                      {exp.company}
+                    </p>
+                    {exp.description && (
+                      <p className="text-[13px] text-gray-600 italic leading-relaxed mb-3 border-l-2 border-gray-300 pl-3">
+                        {exp.description}
+                      </p>
+                    )}
+                  </div>
+                  <div className="md:text-right flex-shrink-0">
+                    <p className="text-[14px] font-medium text-gray-700">
+                      {exp.dates}
+                    </p>
+                    <p className="text-[14px] text-gray-600 flex items-center md:justify-end gap-1">
+                      <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                        <path fillRule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clipRule="evenodd" />
+                      </svg>
+                      {exp.location}
+                    </p>
+                  </div>
+                </div>
+
+                {/* Achievements */}
+                <ul className="space-y-3 text-[15px] text-[#343F56] leading-relaxed">
+                  {exp.bullets.map((bullet, i) => (
+                    <li key={i} className="flex items-start gap-3">
+                      <span className="text-purple-500 font-bold flex-shrink-0 mt-1">▸</span>
+                      <span>{bullet}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
     </section>
   )
