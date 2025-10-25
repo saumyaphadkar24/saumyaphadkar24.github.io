@@ -1,34 +1,20 @@
 // src/components/overlays/WagSyncAIOverlay.jsx
-export default function WagSyncAIOverlay({ onClose }) {
-  return (
-    <div
-      className="fixed inset-0 z-50 bg-black/40 flex items-center justify-center p-4"
-      onClick={onClose}
-    >
-      <div
-        className="
-          bg-white/90
-          border-[3px] border-[#FAF9F8]
-          rounded-[16px]
-          shadow-lg
-          max-w-3xl w-full
-          overflow-hidden
-        "
-        onClick={e => e.stopPropagation()}
-      >
-        {/* Header */}
-        <div className="bg-[#FFFACD] px-6 py-4 rounded-t-[16px]">
-          <h3 className="text-[24px] font-bold text-[#343F56] text-center">
-            WagSyncAI: AI-Powered Dog Parenting Assistant
-          </h3>
-          <div className="mt-1 text-center text-[14px] text-[#343F56]">
-            HCI, HCD, User Research, Figma, GenAI, VR
-          </div>
-        </div>
+import OverlayWrapper from './OverlayWrapper'
 
-        <div className="relative flex">
-          {/* Body */}
-          <div className="p-6 flex-1 space-y-4 text-[#343F56]">
+export default function WagSyncAIOverlay({ onClose, onNext, onPrev }) {
+  return (
+    <OverlayWrapper
+      onClose={onClose}
+      onNext={onNext}
+      onPrev={onPrev}
+      title="WagSyncAI: AI-Powered Dog Parenting Assistant"
+      titleId="wagsyncai-title"
+      subtitle="HCI, HCD, User Research, Figma, GenAI, VR"
+      headerColor="#FFFACD"
+    >
+      <div className="relative flex">
+        {/* Body */}
+        <div className="p-6 flex-1 space-y-4 text-[#343F56]">
             <ul className="list-disc pl-5 space-y-2">
               <li>
                 Conducted <strong>user-centered design research with 10+ participants</strong>,
@@ -100,7 +86,6 @@ export default function WagSyncAIOverlay({ onClose }) {
             </a>
           </div>
         </div>
-      </div>
-    </div>
+      </OverlayWrapper>
   )
 }

@@ -100,6 +100,7 @@ export default function AboutSection() {
       <div className="flex justify-center mt-12">
         <button
           onClick={() => setOpen(true)}
+          aria-label="View fun facts about Saumya"
           className="
             px-8 py-3
             bg-gradient-to-r from-purple-300 to-blue-300
@@ -115,6 +116,7 @@ export default function AboutSection() {
             ease-out
             hover:from-purple-400 hover:to-blue-400
             hover:shadow-lg
+            focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2
           "
         >
           Fun Facts

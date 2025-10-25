@@ -48,11 +48,11 @@ const pillColors = [
 ]
 
 export default function SkillsSection() {
-  const [hovered, setHovered]       = useState(null)
-  const [popupTop, setPopupTop]     = useState(0)
-  const popupRef                    = useRef(null)
+  const [hovered, setHovered] = useState(null)
+  const [popupTop, setPopupTop] = useState(0)
+  const popupRef = useRef(null)
 
-  // Auto-scroll effect whenever `hovered` becomes truthy
+  // Auto-scroll effect when hovering
   useEffect(() => {
     const el = popupRef.current
     if (!hovered || !el) return
@@ -60,7 +60,7 @@ export default function SkillsSection() {
     let frameId
     let pos = 0
     const maxScroll = el.scrollWidth - el.clientWidth
-    const speed     = 0.5  // px per frame
+    const speed = 0.5
 
     function step() {
       pos = pos >= maxScroll ? 0 : pos + speed
@@ -69,7 +69,6 @@ export default function SkillsSection() {
     }
     frameId = requestAnimationFrame(step)
 
-    // cleanup on hover end
     return () => {
       cancelAnimationFrame(frameId)
       el.scrollLeft = 0
@@ -83,7 +82,7 @@ export default function SkillsSection() {
       </h2>
 
       <div className="relative">
-        {/* 1) Auto-scrolling popup */}
+        {/* Auto-scrolling popup */}
         {hovered && (
           <div
             ref={popupRef}
@@ -98,27 +97,27 @@ export default function SkillsSection() {
             "
           >
             {techStacks[hovered].map((tag, i) => {
-              const hex = pillColors[i % pillColors.length];
-              return (
-                <span
-                  key={tag}
-                  style={{ backgroundColor: `${hex}33`, borderColor: hex }}
-                  className="
-                    inline-block border-2 rounded-full
-                    px-6 py-2
-                    text-[#343F56] text-[16px] font-bold
-                    shadow-md transform transition-all duration-200 ease-out
-                    hover:scale-105
-                  "
-                >
-                  {tag}
-                </span>
-              );
-            })} {/* <-- closes the .map callback and the map call */}
+                const hex = pillColors[i % pillColors.length];
+                return (
+                  <span
+                    key={tag}
+                    style={{ backgroundColor: `${hex}33`, borderColor: hex }}
+                    className="
+                      inline-block border-2 rounded-full
+                      px-6 py-2
+                      text-[#343F56] text-[16px] font-bold
+                      shadow-md transform transition-all duration-200 ease-out
+                      hover:scale-105
+                    "
+                  >
+                    {tag}
+                  </span>
+                );
+              })}
           </div>
         )}
 
-        {/* 2) The six-tile grid */}
+        {/* The six-tile grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {skills.map(skill => (
             <div
