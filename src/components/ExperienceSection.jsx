@@ -4,7 +4,7 @@ import React from 'react'
 const experiences = [
   {
     title: 'Machine Learning Engineer',
-    company: 'Sanio AI',
+    company: 'Paladio AI',
     description: 'Empowering enterprises to unlock siloed data and build differentiated AI faster through real-time labeling, intelligent data orchestration, and scalable data pipelines.',
     location: 'New York City Metropolitan Area',
     dates: 'Sept 2025 – Present',
