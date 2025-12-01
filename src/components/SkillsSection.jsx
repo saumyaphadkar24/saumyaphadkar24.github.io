@@ -13,12 +13,12 @@ const skills = [
 const techStacks = {
   "AI/ML & Data Science": [
     "TensorFlow","PyTorch","Keras","scikit-learn","Pandas","NumPy",
-    "MBart","GPT","BERT","M2M","RAG","Prompt Engineering","Llama",
+    "MBart","GPT","BERT","M2M","RAG","Prompt Engineering","Llama","LangChain","OpenRouter",
     "SpaCy","NLTK","OpenCV","Attention-based CNNs","SHAP (Explainable AI)","AWS SageMaker"
   ],
   "Web & App Development": [
     "React","Redux","Angular","Vue3","D3.js","HTML5","CSS3","JavaScript",
-    "TypeScript","Flask","Django","Node.js","RESTful APIs","JWT Authentication"
+    "TypeScript","Flask","Django","FastAPI","Node.js","RESTful APIs","JWT Authentication"
   ],
   "Data Visualization": [
     "Tableau (Cloud & Desktop)","Power BI","D3.js","Matplotlib","Seaborn",
@@ -28,8 +28,8 @@ const techStacks = {
     "Python","Java","JavaScript","C++","C","R","SQL","Scala","Kotlin","C#"
   ],
   "Cloud & DevOps": [
-    "AWS (S3, Lambda, EC2, SageMaker)","Azure","Docker","Kubernetes",
-    "CI/CD pipelines","Terraform","Spark","Hadoop Ecosystem",
+    "AWS (S3, Lambda, EC2, SageMaker, ECS, Bedrock)","Azure","Docker","Kubernetes",
+    "CI/CD pipelines","Terraform","Temporal","Spark","Hadoop Ecosystem",
     "Git & Version Control","Serverless functions"
   ],
   "Tools & Platforms": [

@@ -9,9 +9,22 @@ const experiences = [
     location: 'New York City Metropolitan Area',
     dates: 'Sept 2025 – Present',
     bullets: [
-      'Built a Dynamic Attribute Extraction Pipeline for 3M+ SKUs, leveraging LLM-powered raw attribute extraction with OpenAI/Ollama and advanced prompt engineering.',
-      'Designed an embedding-driven normalization system using cosine similarity clustering, low-threshold recall, and LLM semantic validation to unify attribute variants.',
-      'Architected a schema-free EAV framework with coverage-scored attribute ranking, enabling adaptive catalog analytics and effortless schema evolution across diverse product domains.',
+      'Built a LangChain + OpenRouter-based Dynamic Attribute Extraction Pipeline for 3M+ SKUs using prompt engineering and fallback chaining, ensuring resilient LLM-powered product data extraction.',
+      'Designed a hybrid normalization layer combining embedding-based clustering (cosine similarity) with fuzzy string matching to unify product attribute variants, achieving 90% precision.',
+      'Architected a schema-free EAV (Entity-Attribute-Value) framework with attribute coverage scoring, enabling adaptive catalog analytics and effortless schema evolution across diverse product domains.',
+      'Engineered FastAPI microservices with Temporal orchestration and deployed using Docker on AWS ECS for scalable production workflows.',
+    ],
+  },
+  {
+    title: 'Software Engineer',
+    company: 'Streetlives, Inc.',
+    description: 'Streetlives builds AI-powered platforms to connect underserved communities with critical social services through intelligent automation and conversational interfaces.',
+    location: 'New York City Metropolitan Area',
+    dates: 'Sept 2025 – Present',
+    bullets: [
+      'Built a hybrid multilingual chat flow combining GPT-4o mini for slot-filling and Llama 3.2 for translation, reducing backend inference cost by 55% (via AWS Bedrock + DeepSeek).',
+      'Designed a scalable SQL-driven dialogue engine to replace free-form LLM replies, supporting 25+ dialogue states with parameter-driven queries, reducing latency by 35%.',
+      'Developed an RPA-based form-filling automation tool with intelligent routing for CCaaS platforms, automating 90% of referral submissions and cutting manual overhead by 70%.',
     ],
   },
   {
@@ -21,11 +34,9 @@ const experiences = [
     location: 'New York, NY',
     dates: 'Oct 2024 – Sept 2025',
     bullets: [
-      'Enhanced the dashboard with longitudinal career-path analytics, enabling visualization of alumni movement across sectors and time for trend and retention analysis.',
-      'Applied advanced Tableau capabilities (LOD expressions, parameter-driven filtering, calculated fields, custom hierarchies) to build complex, interactive visualizations tailored to institutional decision-making.',
-      'Integrated Generative AI accessibility frameworks, using prompt engineering and LLM-based data classification to support scalable feature generation and ensure the dashboard met inclusive, accessible design standards.',
-      'Conducted comprehensive market research across 50 R1 universities (web scraping) to analyze PhD alumni dashboard functionalities and develop a strategic metric system aligning with stakeholder needs.',
-      'Designed and deployed a centralized, interactive Tableau dashboard, integrating 20K+ alumni records across academia, corporate, nonprofit, and government sectors to improve data-driven decision-making and transparency.',
+      'Created NYU\'s first centralized PhD Alumni Career Outcomes Dashboard, integrating 20K+ records across academia, corporate, nonprofit, and government sectors to improve data transparency and decision-making.',
+      'Benchmarked 50 R1 universities\' PhD dashboards (via web scraping) to design a strategic metric system aligned with institutional stakeholder needs.',
+      'Led accessibility compliance achieving WCAG 2.1 AA standards using Generative AI frameworks for automated alt-text and semantic classification.',
     ],
   },
   {
@@ -34,9 +45,9 @@ const experiences = [
     location: 'Remote, NY',
     dates: 'May 2024 – Oct 2024',
     bullets: [
-      'Developed and deployed an attention-based CNN on AWS SageMaker, utilizing MBart for feature engineering and REST APIs for data collection, achieving an F1 score of 0.91 in data categorization.',
-      'Implemented SHAP for Explainable AI to ensure model transparency and adherence to AI Governance principles; collaborated on frontend enhancements in Angular and Vue3 for dynamic data visualizations.',
-      'Built interactive Tableau dashboards on AWS EC2, optimized for performance and security; automated data pipelines using Tableau’s CLI & REST API and integrated them with Java-based backend APIs and MSSQL.',
+      'Built a LangChain-based agent for meeting participation prediction, integrating automated web scraping and feature engineering to achieve 91% F1 score in member engagement forecasting.',
+      'Implemented SHAP for Explainable AI, ensuring model transparency, interpretability, and alignment with AI Governance principles.',
+      'Automated interactive Tableau dashboards on AWS EC2, integrating Tableau REST API with Java-based backend services and MSSQL for real-time analytics.',
     ],
   },
   {
