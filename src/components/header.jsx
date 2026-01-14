@@ -22,14 +22,18 @@ export default function Header() {
 
       {/* ─── Row 1: name on left, icons on right ───────────────────── */}
       <div className="flex justify-between items-center">
-        <div className="font-extrabold text-[20px] text-[#343F56]">
+        <a
+          href="#home"
+          className="font-extrabold text-[20px] text-[#343F56] hover:text-transparent hover:bg-clip-text hover:bg-gradient-to-r hover:from-purple-600 hover:to-blue-600 transition-all cursor-pointer"
+        >
           Saumya Parag Phadkar
-        </div>
+        </a>
         <div className="flex items-center space-x-[16px]">
           <a
             href="/Resume.pdf"
-            download
-            aria-label="Download resume as PDF"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="View resume as PDF"
             className="
               px-4 py-2
               bg-gradient-to-r from-purple-300 to-blue-300
@@ -47,7 +51,7 @@ export default function Header() {
               focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2
             "
           >
-            Download Resume
+            View Resume
           </a>
           <a
             href="https://linkedin.com/in/saumya-phadkar"

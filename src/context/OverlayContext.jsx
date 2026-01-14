@@ -7,9 +7,11 @@ const UrbanHealthOptOverlay = lazy(() => import('../components/overlays/UrbanHea
 const AdvancedModelOverlay = lazy(() => import('../components/overlays/AdvancedModelOverlay'))
 const FarmersMarketsOverlay = lazy(() => import('../components/overlays/FarmersMarketsOverlay'))
 const SmallDataOverlay = lazy(() => import('../components/overlays/SmallDataOverlay'))
+const StreetlivesOverlay = lazy(() => import('../components/overlays/StreetlivesOverlay'))
 
 // Project keys in order
 const PROJECT_KEYS = [
+  'Streetlives',
   'SustainableShopper',
   'WagSyncAI',
   'UrbanHealthOpt',
@@ -25,7 +27,8 @@ const OVERLAY_COMPONENTS = {
   UrbanHealthOpt: UrbanHealthOptOverlay,
   AdvancedModel: AdvancedModelOverlay,
   FarmersMarkets: FarmersMarketsOverlay,
-  FewShotStock: SmallDataOverlay
+  FewShotStock: SmallDataOverlay,
+  Streetlives: StreetlivesOverlay
 }
 
 // Create context

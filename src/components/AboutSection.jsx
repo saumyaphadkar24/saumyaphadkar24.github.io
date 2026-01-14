@@ -35,19 +35,16 @@ export default function AboutSection() {
           </h3>
           <div className="space-y-4 text-[16px] leading-relaxed">
             <p>
-              Full-Stack AI/ML Engineer with experience building and deploying production-grade AI systems across cloud platforms (AWS, SageMaker), ML infrastructure (Docker, LangChain, Temporal), and modern frontends (React, Angular, Vue3).
+              Full-Stack AI/ML Engineer who builds real-world AI systems and learns quickly when things get complex.
             </p>
             <p>
-              Currently based in New York (by way of Pune, India), I'm working dual roles as a Machine Learning Engineer at Sanio AI and Software Engineer at Streetlives, Inc., where I specialize in LLM orchestration, RAG pipelines, conversational AI, and Explainable AI across startup and nonprofit environments.
+              I design and ship end-to-end ML and LLM products across cloud, ML infrastructure, and modern frontends. I have built large-scale attribute extraction pipelines, conversational AI systems, and data platforms that move from research to reliable deployment.
             </p>
             <p>
-              I thrive where code meets creativity: I've architected a 1M+ SKU attribute extraction pipeline using LangChain and OpenRouter, built hybrid multilingual chat flows reducing inference costs by 55%, and developed PhD alumni dashboards processing 20K+ records for NYU.
+              I enjoy the intersection of engineering and product thinking. Turning messy ideas into clear systems, improving user experience, and making complex AI feel usable is where I do my best work.
             </p>
             <p>
-              Whether it's wrangling large language models, engineering hybrid normalization frameworks combining semantic embeddings with fuzzy matching, or building SQL-driven dialogue engines with RPA automation, I believe technology should be as intelligent as it is accessible.
-            </p>
-            <p>
-              Some people collect stamps—I collect algorithms, side projects, and a running list of product ideas. From translating 4,000+ Bollywood scripts to optimizing urban health facility placement, I'm always looking for the next interesting problem to solve.
+              Outside work, I stay curious and playful. I collect side projects, product ideas, and weird technical experiments, and I bring that same energy into teams when solving high-pressure problems.
             </p>
           </div>
         </div>
@@ -71,28 +68,24 @@ export default function AboutSection() {
           <h3 className="text-[24px] font-semibold text-purple-700 text-center">
             What I'm Good At
           </h3>
-          <ul className="list-disc list-inside space-y-3 text-[16px] leading-relaxed">
-            <li>
-              <span className="font-semibold">AI/ML Engineering:</span>{' '}
-              Production LLM pipelines with multi-model orchestration. Expert in RAG, prompt engineering, fine-tuning (LoRA), and meta-learning.
-            </li>
-            <li>
-              <span className="font-semibold">Scalable Infrastructure:</span>{' '}
-              FastAPI microservices with Temporal workflows, Docker orchestration. Reduced memory usage by 90%. AWS certified (SageMaker, Lambda, EC2).
-            </li>
-            <li>
+          <div className="space-y-3 text-[16px] leading-relaxed">
+            <p>
+              <span className="font-semibold">LLMs & Production AI:</span>{' '}
+              I make language models work in production, not just demos. Multi-model orchestration, RAG systems, and smart prompt engineering that cut inference costs 55%.
+            </p>
+            <p>
               <span className="font-semibold">Full-Stack Development:</span>{' '}
-              React, Angular, Vue3, Redux frontends. Flask, Django, .NET Core backends. Production apps with 98% uptime.
-            </li>
-            <li>
-              <span className="font-semibold">Data Engineering & Viz:</span>{' '}
-              Advanced Tableau, D3.js. Spark, Hadoop, Neo4j, GraphDB. Built dashboards on AWS EC2 integrated with Java APIs.
-            </li>
-            <li>
+              I build end-to-end. React/Angular/Vue frontends, Flask/Django/FastAPI backends. I care about the whole experience - API speed and how the button feels.
+            </p>
+            <p>
+              <span className="font-semibold">Cloud & Data Infrastructure:</span>{' '}
+              AWS-certified. Docker, Temporal, Spark, Hadoop, Neo4j. I know when to use which tool and how to make systems scale without over-engineering.
+            </p>
+            <p>
               <span className="font-semibold">Product & Research:</span>{' '}
-              User-centered design with Figma prototyping and user studies. Advanced research projects in meta-learning (MAML), geospatial optimization with TIGER/Line shapefiles, and few-shot learning with Siamese networks. Conducted 50+ parameterized simulations for data-driven decision making.
-            </li>
-          </ul>
+              I prototype in Figma, run user studies, and back decisions with data. I've done meta-learning, geospatial optimization, and few-shot learning - but I care more about solving real problems than publishing papers.
+            </p>
+          </div>
         </div>
       </div>
 
